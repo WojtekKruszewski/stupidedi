@@ -290,6 +290,12 @@ module Stupidedi
           autoload :AK5,
             "stupidedi/versions/functional_groups/004010/segment_defs/AK5"
 
+          autoload :SCH,
+            "stupidedi/versions/functional_groups/004010/segment_defs/SCH"
+
+          autoload :PRF,
+            "stupidedi/versions/functional_groups/004010/segment_defs/PRF"
+
         end
       end
     end
