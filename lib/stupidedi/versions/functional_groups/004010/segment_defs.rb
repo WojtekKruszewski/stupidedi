@@ -293,6 +293,12 @@ module Stupidedi
           autoload :SCH,
             "stupidedi/versions/functional_groups/004010/segment_defs/SCH"
 
+          autoload :FOB,
+            "stupidedi/versions/functional_groups/004010/segment_defs/FOB"
+
+          autoload :CTP,
+            "stupidedi/versions/functional_groups/004010/segment_defs/CTP"
+
         end
       end
     end

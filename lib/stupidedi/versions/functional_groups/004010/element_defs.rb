@@ -313,7 +313,11 @@ module Stupidedi
               "DS" => "Drop Ship",
               "SA" => "Stand Alone",
               "EO" => "Emergency Order",
-              "RO" => "Rush Order"))
+              "RO" => "Rush Order",
+              "CO" => "Stocking",
+              "PR" => "Promo",
+              "OS" => "Container",
+              "RC" => "Retailer Pre-Commitment"))
 
           E93   = t::AN.new(:E93  , "Name"                                 , 1, 60)
           E96   = t::Nn.new(:E96  , "Number of Included Segments"          , 1, 10, 0)
@@ -4055,7 +4059,11 @@ module Stupidedi
               "UP" => "UPC Consumer Packaging Code",
               "VV" => "Motor Vehicle ID Number",
               "ZZ" => "Mutually Defined"))
-
+          E236  = t::ID.new(:E236 , "Price Identifier Code"                , 1, 3,
+            s::CodeList.build(
+              "SLP" => "Suggested List Price",
+              "WHL" => "Wholesale"))
+                              
           E254  = t::ID.new(:E254 , "Packing Group Code"                   , 1, 3)
           E267  = t::Nn.new(:E267 , "Net Explosive Quantity"               , 1, 10, 0)
           E277  = t::ID.new(:E277 , "UN/NA Identification Code"            , 6, 6)
@@ -5907,6 +5915,9 @@ module Stupidedi
               "ZZ" => "Mutually Defined"))
 
           E646  = t:: R.new(:E646 , "Quantity Shipped to Date"             , 1, 9)
+          E648  = t:: R.new(:E648 , "Price Multiplier Qualifier"           , 1, 3,
+            s::CodeList.build(
+              "DIS" => "Discount Multiplier"))
           E649  = t:: R.new(:E649 , "Multiplier"                           , 1, 10)
           E665  = t::ID.new(:E665 , "Residue Indicator Code"               , 1, 1,
             s::CodeList.build(

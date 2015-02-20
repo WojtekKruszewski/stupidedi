@@ -20,6 +20,10 @@ module Stupidedi
         autoload :SH856, "stupidedi/contrib/004010/guides/SH856"
         autoload :SQ866, "stupidedi/contrib/004010/guides/SQ866"
         autoload :FA997, "stupidedi/contrib/004010/guides/FA997"
+
+        # vendor-specific
+        autoload :Wayfair, "stupidedi/contrib/004010/guides/wayfair/wayfair.rb"
+
       end
     end
   end
