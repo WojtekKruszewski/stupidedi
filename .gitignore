@@ -2,4 +2,5 @@
 doc/generated
 coverage
 .bundle
-.ruby-version
+pkg/**
+TAGS

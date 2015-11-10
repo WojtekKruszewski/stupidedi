@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "term-ansicolor", "~> 1.3"
   s.add_dependency "cantor",         "~> 1.2.1"
+  s.add_development_dependency('geminabox', "~> 0.12.4")
 end
